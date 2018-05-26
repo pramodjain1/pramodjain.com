@@ -1,0 +1,68 @@
+<!--
+  Generated template for the ExpPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Work Experience</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content align-self-center padding>
+
+
+  <div class="timeline">
+    <div class="container left">
+      <div class="t-content" style="background: #cecece">
+        <h5>Project Engineer, Wipro Technologies</h5>
+        <p style="font-style:italic">July,2015 - Present</p>
+
+
+        <button ion-button full icon-start (click)="a=='hide' ? a='show' : a='hide'"><ion-icon class="btnIcon" name="arrow-{{a=='show'?'dropup' : 'dropdown'}}"></ion-icon> {{a=='show'?' Hide ':' Show '}}</button>
+        <ion-list [@popOverState]="a" style="overflow: hidden;">
+          <p>Involved in UI Development using Angular 1/2/4, Typescript, JavaScript, HTML 5, CSS 3.</p>
+          <p>Programmed in an object-oriented programming language with an eye toward code abstraction and reuse.</p>
+          <p>Developed the functionality for communicating between the modules mostly involved in VIEW and CONTOLLER section
+            of MVC pattern, it includes HTML, CSS3, JavaScript and AJAX which were used for UI development.</p>
+          <p>Involved in implementation of application using conventional design practices (Web-Service Oriented Architecture,
+            MVC-Model View Controller).
+          </p>
+          <p>Used Angular Http Request to read data from web servers and process JSON data to render in the UI.</p>
+          <p>Used Angular as framework to create a Single Page Application (SPA), which can bind data to specific views and
+            synchronize data with server.
+          </p>
+          <p>Used GULP for minifying codes, compiling SASS, code analysis.</p>
+          <p>Worked as module lead and involved in code review of the developed functionalities to match the coding standards
+            and guidelines provided by the client.</p>
+          <p>Provided on job training to the junior members.</p>
+          <p>Involved in developing HTML and JavaScript for client-side presentation and, data validation on the client side
+            with in the forms.</p>
+          <p>Used version control tool SVN for Source Code version management.</p>
+          <p>Designed dynamic and multi-browser compatible and responsive pages using HTML, CSS and JavaScript using Bootstrap.
+            Involved in debugging, bug fixing and documentation of the overall application and system.</p>
+        </ion-list>
+
+
+
+      </div>
+    </div>
+    <div class="container right">
+      <div class="t-content" style="background: #cecece">
+        <h5>Internship Trainee, Wipro Technologies</h5>
+        <p style="font-style:italic">Jan,2015 - July,2015</p>
+       
+        <button ion-button full icon-start (click)="b=='hide' ? b='show' : b='hide'"><ion-icon class="btnIcon" name="arrow-{{b=='show'?'dropup' : 'dropdown'}}"></ion-icon> {{b=='show'?' Hide ':' Show '}}</button> 
+        <p [@popOverState]="b" style="overflow: hidden;">Participated in Internship Training in Unix and completed Project Readiness Program under guidance of Talent Transformation
+          Team in Wipro.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</ion-content>

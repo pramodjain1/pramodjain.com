@@ -1,0 +1,28 @@
+
+  .avatar img{
+    border-radius: 50%;
+    padding: 6px;
+    background: #EEE;
+    height: 161px;
+  }
+  
+  p.profile{
+    font-size: 1.6rem;
+    font-style: italic;
+    text-align: justify;
+  }
+  
+  /* Container for skill bars */
+  .skill-container {
+      width: 100%; /* Full width */
+      background-color: #ddd; /* Grey background */
+  }
+  
+  .skills {
+      text-align: right; /* Right-align text */
+      padding-right: 20px; /* Add some right padding */
+      line-height: 17px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
+      color: white; /* White text color */
+  }
+  
+  
